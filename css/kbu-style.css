@@ -45,9 +45,14 @@
     margin: 3.5px 0 0 0;
 }
 
+.main .visual-img-box {
+    overflow: hidden;
+}
+
 .main .visual-img {
-    width: 100%;
     display: block;
+    width: 170%;
+    transform: translateX(-16%);
 }
 
 .main .tab-item {
