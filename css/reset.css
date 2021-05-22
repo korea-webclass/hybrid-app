@@ -104,7 +104,7 @@ fieldset {
 }
 
 /* 웹 접근성 스크린리더기 */
-.hide {
+.hide, .blind {
     overflow: hidden;
     position: absolute;
     clip: rect(0 0 0 0);
