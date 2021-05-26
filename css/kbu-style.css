@@ -5,8 +5,8 @@
 */
 
 .inner-center {
-    padding: 0 20px;
-    margin: 0 20px;
+    padding: 0 10px;
+    margin: 0 10px;
 }
 
 .header .content {
@@ -17,7 +17,7 @@
 .header .logo {
     position: absolute;
     top: 8px;
-    left: 40px;
+    left: 0px;
 }
 
 .header .logo-img {
@@ -28,7 +28,7 @@
 .header .btn-menu {
     position: absolute;
     top: 16px;
-    right: 40px;
+    right: 0;
     width: 20px;
     height: 11.5px;
     background: none;
@@ -93,22 +93,80 @@
     right: 40px; /* 기본 0px 값으로 해주세요 */
 }
 
+.main .news-kbu {
+    padding: 40px 0;
+}
+.main .news-kbu-content {
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
 .main .news-kbu-title {
     font-size: 24px;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .main .news-kbu-notice {
-    font-size: 32px;
+    border: 1px solid #dddddd;
+    background-color: #f7f7f7;
+    padding: 15px;
+    height: 194px;
+    text-overflow: ellipsis;
+
 }
 
-.main .news-kbu-notice ul {
-    display: flex;
+.main .news-kbu-notice .notice-list {
+    text-align: justify;
+    text-align-last: justify;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 0 12px 0;
 }
 
-.main .news-kbu-notice ul li {
-    padding: 0 19px;
+.main .news-kbu-notice .notice-item {
+    font-size: 16px;
+    display: inline-block;
+}
+/* 
+.main .news-kbu-notice .notice-link {
+    position: relative;
+    padding: 0 5px;
 }
 
+.main .news-kbu-notice .notice-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #d71c75;
+}
+.main .news-kbu-notice-txt-list {
+    position: absolute;
+    top: 48px;
+    white-space: nowrap;
+}
 
+.main .news-kbu-notice-txt-list .txt-list-item {
+    margin-bottom: 12px;
+}
 
+.main .news-kbu-notice-txt-list .txt-list-item::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .news-kbu-notice-txt-list .txt-list-link {
+    float: left;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .news-kbu-notice-txt-list .txt-list-date {
+    float: right;
+} */
