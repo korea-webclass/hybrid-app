@@ -41,7 +41,7 @@
     background-color: #000;
 }
 
-.header .btn-menu-line + .btn-menu-line {
+.header .btn-menu-line+.btn-menu-line {
     margin: 3.5px 0 0 0;
 }
 
@@ -72,7 +72,7 @@
 
 .main .tab-link::before {
     content: '';
-    position: absolute;    
+    position: absolute;
     top: 12px;
     left: 20px;
     width: 20px;
@@ -82,20 +82,28 @@
 
 .main .tab-link::after {
     content: '';
-    width: 14px; /* 사이즈 */
-    height: 14px; /* 사이즈 */
-    border-top: 1px solid #fff; /* 선 두께 */
-    border-right: 1px solid #fff; /* 선 두께 */
+    width: 14px;
+    /* 사이즈 */
+    height: 14px;
+    /* 사이즈 */
+    border-top: 1px solid #fff;
+    /* 선 두께 */
+    border-right: 1px solid #fff;
+    /* 선 두께 */
     display: inline-block;
-    transform: rotate(135deg); /* 각도 */
+    transform: rotate(135deg);
+    /* 각도 */
     position: absolute;
-    top: 10px; /* 기본 0px 값으로 해주세요 */
-    right: 40px; /* 기본 0px 값으로 해주세요 */
+    top: 10px;
+    /* 기본 0px 값으로 해주세요 */
+    right: 40px;
+    /* 기본 0px 값으로 해주세요 */
 }
 
 .main .news-kbu {
     padding: 40px 0;
 }
+
 .main .news-kbu-content {
     padding: 0 10px;
     margin: 0 10px;
@@ -105,6 +113,7 @@
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: 700;
+    letter-spacing: -1px;
 }
 
 .main .news-kbu-notice {
@@ -113,12 +122,12 @@
     padding: 15px;
     height: 194px;
     text-overflow: ellipsis;
-
+    position: relative;
 }
 
 .main .news-kbu-notice .notice-list {
-    text-align: justify;
-    text-align-last: justify;
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #dbdbdb;
     padding: 0 0 12px 0;
 }
@@ -127,13 +136,13 @@
     font-size: 16px;
     display: inline-block;
 }
-/* 
+
 .main .news-kbu-notice .notice-link {
     position: relative;
     padding: 0 5px;
 }
 
-.main .news-kbu-notice .notice-link::after {
+.main .news-kbu-notice .notice-link.on::after {
     content: '';
     display: block;
     position: absolute;
@@ -143,30 +152,45 @@
     height: 2px;
     background-color: #d71c75;
 }
-.main .news-kbu-notice-txt-list {
+
+.main .news-kbu-notice .txt-list {
     position: absolute;
-    top: 48px;
+    top: 62px;
+    left: 0;
     white-space: nowrap;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
-.main .news-kbu-notice-txt-list .txt-list-item {
+.main .news-kbu-notice .txt-item {
     margin-bottom: 12px;
 }
 
-.main .news-kbu-notice-txt-list .txt-list-item::after {
+.main .news-kbu-notice .txt-item::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.main .news-kbu-notice-txt-list .txt-list-link {
+.main .news-kbu-notice .txt-link {
     float: left;
-    width: 100%;
+    width: 80%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-right: 25px;
+    box-sizing: border-box;
+    font-size: 13px;
 }
 
-.main .news-kbu-notice-txt-list .txt-list-date {
+.main .news-kbu-notice .txt-link:hover {
+    text-decoration: underline;
+}
+
+.main .news-kbu-notice .txt-date {
     float: right;
-} */
+    width: 20%;
+    text-align: right;
+    font-size: 13px;
+}
