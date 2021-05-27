@@ -1,10 +1,6 @@
 @charset "utf-8";
 
 /* 공통 */
-.title-h1 {}
-.title-h2 {}
-.title-h3 {}
-.title-h4 {}
 .title-h5 {
     font-size: 16px;
 }
