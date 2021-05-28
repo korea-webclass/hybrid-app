@@ -191,6 +191,11 @@
 .main .kbu-calendar {
     background-color: #0964c9;
     padding: 15px;
+    position: relative;
+}
+
+.main .kbu-calendar .line {
+    background-color: #fff;
 }
 
 .main .kbu-calendar-title {
@@ -229,6 +234,11 @@
 .main .bachelor {
     background-color: #d71c75;
     padding: 15px;
+    position: relative;
+}
+
+.main .bachelor .line {
+    background-color: #fff;
 }
 
 .main .kbu-bachelor-title {
@@ -246,6 +256,11 @@
     background-color: #f7f7f7;
     border: 1px solid #dddddd;
     padding: 15px;
+    position: relative;
+}
+
+.main .job .line {
+    background-color: #323232;
 }
 
 .main .kbu-job-title {
