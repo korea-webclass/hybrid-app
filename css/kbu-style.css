@@ -272,3 +272,31 @@
     font-weight: 200;
     font-size: 13px;
 }
+
+.main .user-space {
+    padding: 15px;
+}
+
+.main .user-space-list {
+    width: 100%;
+}
+
+.main .user-space-item {
+    width: 33.3%;
+    text-align: center;
+}
+
+.main .user-space-link {
+    display: block;
+}
+
+.main .user-space-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../image/kbu-image/info-icon01.png') no-repeat 0 0 / 24px auto;
+}
+.main .user-space-txt {
+    display: block;
+    font-size: 13px;
+}
