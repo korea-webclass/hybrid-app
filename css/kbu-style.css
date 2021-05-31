@@ -281,13 +281,22 @@
     width: 100%;
 }
 
+.main .user-space-list::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .main .user-space-item {
+    float: left;
     width: 33.3%;
     text-align: center;
 }
 
 .main .user-space-link {
     display: block;
+    padding: 17px 26px;
+    box-sizing: border-box;
 }
 
 .main .user-space-icon {
@@ -296,6 +305,7 @@
     height: 24px;
     background: url('../image/kbu-image/info-icon01.png') no-repeat 0 0 / 24px auto;
 }
+
 .main .user-space-txt {
     display: block;
     font-size: 13px;
