@@ -277,6 +277,10 @@
     padding: 15px;
 }
 
+.main .user-space-arr {}
+.main .user-space-arr .prev {}
+.main .user-space-arr .next {}
+
 .main .user-space-list {
     width: 100%;
 }
@@ -303,8 +307,17 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('../image/kbu-image/info-icon01.png') no-repeat 0 0 / 24px auto;
 }
+
+.main .user-space-icon.icon01 {background: url('../image/kbu-image/info-icon01.png') no-repeat 0 0 / 24px auto;}
+.main .user-space-icon.icon02 {background: url('../image/kbu-image/info-icon02.png') no-repeat 0 0 / 24px auto;}
+.main .user-space-icon.icon03 {background: url('../image/kbu-image/info-icon03.png') no-repeat 0 0 / 24px auto;}
+.main .user-space-icon.icon04 {background: url('../image/kbu-image/info-icon04.png') no-repeat 0 0 / 24px auto;}
+.main .user-space-icon.icon05 {background: url('../image/kbu-image/info-icon05.png') no-repeat 0 0 / 24px auto;}
+.main .user-space-icon.icon06 {background: url('../image/kbu-image/info-icon06.png') no-repeat 0 0 / 24px auto;}
+.main .user-space-icon.icon07 {background: url('../image/kbu-image/info-icon07.png') no-repeat 0 0 / 24px auto;}
+.main .user-space-icon.icon08 {background: url('../image/kbu-image/info-icon08.png') no-repeat 0 0 / 24px auto;}
+.main .user-space-icon.icon09 {background: url('../image/kbu-image/info-icon09.png') no-repeat 0 0 / 24px auto;}
 
 .main .user-space-txt {
     display: block;
