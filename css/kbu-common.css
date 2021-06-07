@@ -7,17 +7,19 @@
 
 .content-more {
     position: absolute;
-    top: 14px;
-    right: 18px;
+    top: 15px;
+    right: 15px;
     width: 24px;
     height: 24px;
 }
 
 .content-more-link {
     position: relative;
+    top: 2px;
+    left: 2px;
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 .width-line {

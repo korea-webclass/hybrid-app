@@ -168,7 +168,7 @@
 
 .main .news-kbu-notice .txt-link {
     float: left;
-    width: 80%;
+    width: 70%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -183,7 +183,7 @@
 
 .main .news-kbu-notice .txt-date {
     float: right;
-    width: 20%;
+    /* width: 20%; */
     text-align: right;
     font-size: 13px;
 }
@@ -223,12 +223,18 @@
 
 .main .kbu-calendar-txt {
     color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .main .kbu-calendar-subtxt {
     color: #fff;
     opacity: 0.7;
     font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .main .bachelor {
@@ -398,3 +404,35 @@
     color: #000;
     font-weight: 300;
 }
+
+.main .kbu-guidance {}
+.main .kbu-guidance-content {}
+.main .kbu-guidance-title {}
+.main .kbu-guidance .bg-box {
+    width: 100%;
+    /* height: 206px; */
+    overflow: hidden;
+}
+.main .kbu-guidance-bg {
+    background-image: url('../image/kbu-image/kbu-guidance.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* transform: translate(0, -50%); */
+    width: 100%;
+    max-height: 206px;
+    height: 100vh;
+}
+.main .kbu-guidance .txt-box {}
+.main .kbu-guidance .txt {
+    font-size: 24px;
+}
+
+.main .kbu-guidance .subtxt {
+    font-size: 13px;
+}
+
+.main .kbu-guidance .btn-box {}
+.main .kbu-guidance .prev {}
+.main .kbu-guidance .stop {}
+.main .kbu-guidance .next {}
