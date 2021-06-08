@@ -405,9 +405,19 @@
     font-weight: 300;
 }
 
-.main .kbu-guidance {}
-.main .kbu-guidance-content {}
-.main .kbu-guidance-title {}
+.main .kbu-guidance {
+    padding: 40px 0;
+}
+.main .kbu-guidance-content {
+    padding: 0 10px;
+    margin: 0 10px;
+}
+.main .kbu-guidance-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
 .main .kbu-guidance .bg-box {
     width: 100%;
     /* height: 206px; */
@@ -422,17 +432,77 @@
     width: 100%;
     max-height: 206px;
     height: 100vh;
+    position: relative;
 }
-.main .kbu-guidance .txt-box {}
+
+.main .kbu-guidance-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(33, 33, 33, 0.6);
+}
+.main .kbu-guidance .txt-box {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    text-align: center;
+}
 .main .kbu-guidance .txt {
+    display: block;
     font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
 .main .kbu-guidance .subtxt {
     font-size: 13px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.main .kbu-guidance .subtxt:nth-child(3) {
+    margin-bottom: 0;
 }
 
-.main .kbu-guidance .btn-box {}
-.main .kbu-guidance .prev {}
-.main .kbu-guidance .stop {}
-.main .kbu-guidance .next {}
+
+.main .kbu-guidance .btn-box {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(33, 33, 33, 0.8);
+    width: 100%;
+    height: 40px;
+}
+.main .kbu-guidance .prev {
+    width: 16px; /* 사이즈 */
+    height: 16px; /* 사이즈 */
+    border-top: 2px solid #fff; /* 선 두께 */
+    border-right: 2px solid #fff; /* 선 두께 */
+    display: inline-block;
+    transform: rotate(225deg); /* 각도 */
+    position: absolute;
+    top: 11px; /* 기본 0px 값으로 해주세요 */
+    left: 16px; /* 기본 0px 값으로 해주세요 */
+    z-index: 100;
+    background: none;
+}
+
+.main .kbu-guidance .stop {
+    
+}
+.main .kbu-guidance .next {
+    width: 16px; /* 사이즈 */
+    height: 16px; /* 사이즈 */
+    border-top: 2px solid #fff; /* 선 두께 */
+    border-right: 2px solid #fff; /* 선 두께 */
+    display: inline-block;
+    transform: rotate(45deg); /* 각도 */
+    position: absolute;
+    top: 11px; /* 기본 0px 값으로 해주세요 */
+    left: 74px; /* 기본 0px 값으로 해주세요 */
+    z-index: 100;
+    background: none;
+}
