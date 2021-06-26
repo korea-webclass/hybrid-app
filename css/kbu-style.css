@@ -517,3 +517,44 @@
 .main .promotional-video .video-intro {
     width: 100%;
 }
+
+.main .kbu-facilities {
+    padding: 0 10px;
+    margin: 0 10px;
+}
+.main .kbu-facilities-list {
+    border-top: 2px solid #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main .kbu-facilities-list li {
+    position: relative;
+    width: 50%;
+}
+
+.main .kbu-facilities-list li::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    z-index: -1;
+    width: 40px;
+    height: 30px;
+    background: url('../image/kbu-image/kbu-arr.png') no-repeat;
+}
+
+.main .kbu-facilities-list a {
+    display: block;
+    border: 1px solid #eee;
+    padding: 23px 10px;
+}
+.main .kbu-facilities-list p {
+    font-size: 16px;
+}
+.main .kbu-facilities-list span {
+    font-weight: 700;
+}
