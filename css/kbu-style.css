@@ -513,9 +513,12 @@
     padding: 0 10px;
     margin: 0 10px;
 }
-.main .promotional-video {}
+.main .promotional-video {
+    margin-bottom: 20px;
+}
 .main .promotional-video .video-intro {
     width: 100%;
+    vertical-align: top;
 }
 
 .main .kbu-facilities {
