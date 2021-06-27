@@ -80,6 +80,30 @@
   background-color: #fff;
 }
 
+.main .tab-item:nth-child(1) .tab-link::before {
+  height: 18px;
+  background: url('../image/kbu-image/tab-icons.png') no-repeat 0 0 / 100% auto;
+  transform: translateY(2px);
+}
+
+.main .tab-item:nth-child(2) .tab-link::before {
+  height: 15px;
+  background: url('../image/kbu-image/tab-icons.png') no-repeat 0 -17px / 100% auto;
+  transform: translateY(3px);
+}
+
+.main .tab-item:nth-child(3) .tab-link::before {
+  height: 17px;
+  background: url('../image/kbu-image/tab-icons.png') no-repeat 0 -31px / 100% auto;
+  transform: translateY(1px);
+}
+
+.main .tab-item:nth-child(4) .tab-link::before {
+  height: 16px;
+  background: url('../image/kbu-image/tab-icons.png') no-repeat 0 -48px / 100% auto;
+  transform: translateY(3px);
+}
+
 .main .tab-link::after {
   content: '';
   width: 14px;
