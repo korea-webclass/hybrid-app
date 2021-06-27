@@ -331,7 +331,7 @@
 
 .main .user-space-link {
   display: block;
-  padding: 17px 26px;
+  padding: 20px 6px;
   box-sizing: border-box;
 }
 
@@ -380,6 +380,10 @@
 .main .user-space-txt {
   display: block;
   font-size: 13px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main .kbu-news {
