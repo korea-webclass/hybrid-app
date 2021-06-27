@@ -582,3 +582,77 @@
 .main .kbu-phone p {
     font-size: 16px;
 }
+
+.footer {}
+.footer-content {}
+.footer-site {
+    background-color: #393939;
+    overflow: hidden;
+}
+.footer-site ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% - -3px);
+}
+.footer-site li {
+    width: 50%;
+    border: 1px solid #777777;
+    box-sizing: border-box;
+    margin-left: -1px;
+}
+.footer-site a {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    position: relative;
+}
+.footer-site a::after {
+    content: '';
+    width: 12px; /* 사이즈 */
+    height: 12px; /* 사이즈 */
+    border-top: 1px solid #fff; /* 선 두께 */
+    border-right: 1px solid #fff; /* 선 두께 */
+    display: inline-block;
+    transform: rotate(135deg); /* 각도 */
+    position: absolute;
+    top: 5px; /* 기본 0px 값으로 해주세요 */
+    right: 20px; /* 기본 0px 값으로 해주세요 */
+}
+
+.footer-info {
+    background-color: #393939;
+    padding: 0 20px;
+}
+.footer-info ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.footer-info li {
+    width: 50%;
+    height: 32px;
+    line-height: 32px;
+    color: #999999;
+    margin: 10px 0;
+}
+.footer-info .point {
+    color: #3390f8;
+}
+
+.footer-kbu-info {
+    padding: 20px 0;
+}
+
+.footer-kbu-info a {
+    color: #999999;
+    display: block;
+}
+
+.footer-kbu-info p {
+    color: #999999;
+}
