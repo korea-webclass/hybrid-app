@@ -6,6 +6,7 @@
 - [네이버 카페 메인페이지](https://korea-webclass.github.io/web-app/html/naver-main.html){:target="_blank"}
 - [경복대학교 메인페이지](https://korea-webclass.github.io/web-app/html/kbu.html){:target="_blank"}
 
+- [네이버](http://naver.com){:target="_blank"}
 ## 사용 기술
 HTML5 <br>
 CSS3 : flex 사용
