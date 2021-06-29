@@ -387,10 +387,10 @@
   </div>
   <script>
     // a 태그 링크 막기
-    let click = document.querySelectorAll('a');
-    for (let i = 0; i < click.length; i++) {
-      click[i].addEventListener('click', function(e) {
-        e.preventDefault();
+    const aClick = document.querySelectorAll('a');
+    for (let i = 0; i < aClick.length; i++) {
+      aClick[i].addEventListener('click', function(event) {
+        event.preventDefault();
       });
     };
 </script>
