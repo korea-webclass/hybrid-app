@@ -735,13 +735,17 @@
 
 .footer-info li {
   width: 50%;
+}
+
+.footer-info li a {
+  display: block;
   height: 32px;
   line-height: 32px;
   color: #999999;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
-.footer-info .point {
+.footer-info .point a {
   color: #3390f8;
 }
 
