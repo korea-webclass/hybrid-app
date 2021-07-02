@@ -95,7 +95,7 @@
 .main .tab-item:nth-child(3) .tab-link::before {
   height: 17px;
   background: url('../image/kbu-image/tab-icons.png') no-repeat 0 -31px / 100% auto;
-  transform: translateY(1px);
+  transform: translate(1px, 2px);
 }
 
 .main .tab-item:nth-child(4) .tab-link::before {
