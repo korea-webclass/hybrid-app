@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/kbu-common.css">
   <link rel="stylesheet" href="../css/kbu-style.css">
+  <link rel="stylesheet" href="../css/kbu-btn.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>경복대학교 - 모바일 버전 포트폴리오</title>
 </head>
@@ -21,13 +22,57 @@
             </a>
           </h1>
           <button class="btn-menu">
-            <span class="blind">메뉴</span>
+            <span class="blind">메뉴 버튼</span>
             <div class="btn-box">
               <span class="btn-menu-line"></span>
               <span class="btn-menu-line"></span>
               <span class="btn-menu-line"></span>
             </div>
           </button>
+          <div class="btn-menu-bg">
+            <div class="btn-menu-box">
+              <h2 class="title">전체메뉴</h2>
+              <button class="btn-menu">
+                <span class="blind">메뉴 버튼</span>
+                <div class="btn-box">
+                  <span class="btn-menu-line"></span>
+                  <span class="btn-menu-line"></span>
+                </div>
+              </button>
+              <ul class="list01">
+                <li>
+                  <a href="#">대학소개</a>
+                  <ul class="list02">
+                    <li>
+                      <a href="#">KBU소개</a>
+                      <ul class="list03">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">상징</a></li>
+                        <li><a href="#">대학규정 및 정보공개</a></li>
+                        <li><a href="#">교육과정</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">대학소개</a>
+                  <ul class="list02">
+                    <li>
+                      <a href="#">KBU소개</a>
+                      <ul class="list03">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">상징</a></li>
+                        <li><a href="#">대학규정 및 정보공개</a></li>
+                        <li><a href="#">교육과정</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -393,6 +438,16 @@
         event.preventDefault();
       });
     };
+    // 햄버거 메뉴 클릭 코드
+    // const btnOff = document.querySelector('.btn-menu');
+    // const btnOn = document.querySelector('.btn-menu-bg');
+
+    // btnOff.addEventListener('click', btn);
+
+    // function btn() {
+    //   btnOn.classList.add('on');
+    //   console.log(btnOn);
+    // }
 </script>
 </body>
 </html>
