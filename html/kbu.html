@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/kbu-style.css">
   <link rel="stylesheet" href="../css/kbu-btn.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src=""></script>
   <title>경복대학교 | 모바일 버전</title>
   <style>
     .site-notice > p {position: fixed; top: 0; left: 50%; z-index: 9999; transform: translateX(-50%); padding: 2px 6px; background-color: #0964c9; color: #fff;}
@@ -27,57 +28,40 @@
               <img src="../image/kbu-image/mobile-logo.png" class="logo-img" alt="경복대학교 로고">
             </a>
           </h1>
-          <button class="btn-menu">
-            <span class="blind">메뉴 버튼</span>
-            <div class="btn-box">
-              <span class="btn-menu-line"></span>
-              <span class="btn-menu-line"></span>
-              <span class="btn-menu-line"></span>
+          <button class="btn">
+            <div class="btn-menu">
+              <span class="blind">메뉴 버튼</span>
+              <div class="btn-box">
+                <span class="btn-menu-line"></span>
+                <span class="btn-menu-line"></span>
+                <span class="btn-menu-line"></span>
+              </div>
             </div>
           </button>
-          <div class="btn-menu-bg">
-            <div class="btn-menu-box">
-              <h2 class="title">전체메뉴</h2>
-              <button class="btn-menu">
-                <span class="blind">메뉴 버튼</span>
-                <div class="btn-box">
-                  <span class="btn-menu-line"></span>
-                  <span class="btn-menu-line"></span>
-                </div>
-              </button>
-              <ul class="list01">
-                <li>
-                  <a href="#">대학소개</a>
-                  <ul class="list02">
-                    <li>
-                      <a href="#">KBU소개</a>
-                      <ul class="list03">
-                        <li><a href="#">인사말</a></li>
-                        <li><a href="#">연혁</a></li>
-                        <li><a href="#">상징</a></li>
-                        <li><a href="#">대학규정 및 정보공개</a></li>
-                        <li><a href="#">교육과정</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">대학소개</a>
-                  <ul class="list02">
-                    <li>
-                      <a href="#">KBU소개</a>
-                      <ul class="list03">
-                        <li><a href="#">인사말</a></li>
-                        <li><a href="#">연혁</a></li>
-                        <li><a href="#">상징</a></li>
-                        <li><a href="#">대학규정 및 정보공개</a></li>
-                        <li><a href="#">교육과정</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+          <div class="side-menu off">
+            <div class="side-bg">
+              <div class="side-login">
+                <span class="profile"></span>
+                <strong class="text">로그인 · 회원가입</strong>
+              </div>
             </div>
+            <ul class="side-list">
+              <li class="item">
+                <a href="#" class="link">대학소개</a>
+                <ul class="side-list02">
+                  <li class="item02"><a href="" class="link02">KBU소개</a></li>
+                  <li class="item02"><a href="" class="link02">대학기구</a></li>
+                  <li class="item02"><a href="" class="link02">캠퍼스안내</a></li>
+                  <li class="item02"><a href="" class="link02">KBU소식</a></li>
+                  <li class="item02"><a href="" class="link02">경복뉴스</a></li>
+                </ul>
+              </li>
+              <li class="item"><a href="#" class="link">입학안내</a></li>
+              <li class="item"><a href="#" class="link">학과안내</a></li>
+              <li class="item"><a href="#" class="link">대학교육</a></li>
+              <li class="item"><a href="#" class="link">대학생활</a></li>
+              <li class="item"><a href="#" class="link">경복광장</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -444,16 +428,22 @@
         event.preventDefault();
       });
     };
-    // 햄버거 메뉴 클릭 코드
-    // const btnOff = document.querySelector('.btn-menu');
-    // const btnOn = document.querySelector('.btn-menu-bg');
+    
 
-    // btnOff.addEventListener('click', btn);
-
-    // function btn() {
-    //   btnOn.classList.add('on');
-    //   console.log(btnOn);
-    // }
+    // 헤더 사이드 메뉴
+    const btn = document.querySelector('.btn'); 
+    const sideMenu = document.querySelector('.side-menu');
+    btn.addEventListener('click', clickWork);
+    function clickWork() {
+      if (btn.className === 'btn') {
+        btn.className = 'btn on';
+        sideMenu.className = 'side-menu on';
+      } else {
+        btn.className = 'btn';
+        sideMenu.className = 'side-menu off';
+      }
+      console.log(btn);
+    }
 </script>
 </body>
 </html>
