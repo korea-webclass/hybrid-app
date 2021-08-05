@@ -129,6 +129,7 @@
 }
 
 .header .side-list02 {
+  display: block;
   background-color: #eee;
   padding: 0 44px;
 }
