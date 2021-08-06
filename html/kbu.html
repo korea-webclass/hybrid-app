@@ -497,7 +497,27 @@
         btn.className = 'btn';
         sideMenu.className = 'side-menu off';
       }
-      console.log(btn);
+      // console.log(btn);
+    }
+
+
+    // 헤더 사이드 메뉴 목록
+    const ulList = document.querySelectorAll('.header .side-list .link');
+    const items = document.querySelectorAll('.header .side-list .item');
+    for (let i = 0; i < ulList.length; i++) {
+      ulList[i].addEventListener('click', ulListClick);
+    }
+    function ulListClick(e) {
+      let target = e.target;
+      let liTag = target.parentNode;
+      if (liTag.className === 'item') {
+        for (let k = 0; k < items.length; k++) {
+          items[k].className = 'item';
+        }
+        liTag.className = 'item on';
+      } else {
+        liTag.className = 'item';
+      }
     }
 </script>
 </body>

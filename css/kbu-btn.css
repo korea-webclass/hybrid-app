@@ -102,6 +102,10 @@
   text-align: left;
 }
 
+.header .side-list .item.on .side-list02 {
+  display: block;
+}
+
 .header .side-list .link {
   font-size: 16px;
   padding: 0 22px;
@@ -131,7 +135,7 @@
 }
 
 .header .side-list02 {
-  display: block;
+  display: none;
   background-color: #eee;
   padding: 0 44px;
 }
