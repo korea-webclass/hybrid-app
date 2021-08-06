@@ -60,11 +60,12 @@
 }
 
 .header .side-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 1;
   height: 132px;
   background-color: #d71c75;
 }
