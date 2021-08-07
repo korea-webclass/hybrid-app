@@ -179,7 +179,7 @@
   line-height: 40px;
 }
 
-.main .news-kbu-notice .notice-link.on::after {
+.main .news-kbu-notice .notice-item.on .notice-link::after {
   content: '';
   display: block;
   position: absolute;
@@ -198,6 +198,11 @@
   width: 100%;
   padding: 0 15px;
   box-sizing: border-box;
+  display: none;
+}
+
+.main .news-kbu-notice .txt-list.activer {
+  display: block;
 }
 
 .main .news-kbu-notice .txt-item {
