@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/swiper.css">
   <link rel="stylesheet" href="../css/kbu-common.css">
   <link rel="stylesheet" href="../css/kbu-style.css">
   <link rel="stylesheet" href="../css/kbu-btn.css">
@@ -131,8 +132,25 @@
         <section class="visual">
           <h3 class="blind">비주얼 영역</h3>
           <div class="visual-content">
-            <div class="visual-img-box">
-              <img src="../image/kbu-image/main-visual.png" class="visual-img" alt="">
+            <div class="swiper-container visual-slide">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="visual-img-box">
+                      <img src="../image/kbu-image/main-visual01.png" class="visual-img" alt="">
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="visual-img-box">
+                      <img src="../image/kbu-image/main-visual01.png" class="visual-img" alt="">
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -563,6 +581,7 @@
       </div>
     </footer>
   </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     // a 태그 링크 막기
     const aClick = document.querySelectorAll('a');
@@ -572,9 +591,25 @@
       });
     };
     
+    
+    // 메인 비주얼 Swiper.js
+    var swiper = new Swiper(".visual-slide", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop: true,
+      autoplay: {
+        delay: 2000,
+      },
+      pagination: {
+        clickable: true,
+      },
+    });
+
 
     // 헤더 사이드 메뉴
-    const btn = document.querySelector('.btn'); 
+    const btn = document.querySelector('.btn');
     const sideMenu = document.querySelector('.side-menu');
     btn.addEventListener('click', clickWork);
     function clickWork() {
